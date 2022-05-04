@@ -24,7 +24,7 @@ const greeting = {
   title: "Hi, I'm Abdulsalam",
   subTitle: emoji("A focused and enthusiastic developer with a deep knowledge in software development and artificial intelligence; who is keen to solve real-world industry problems by applying creative solutions. So, I am looking for new opportunities to solve new problems through algorithms and software applications."),
   resumeLink:
-    "https://drive.google.com/drive/folders/1sa5V7hjf66fkZuOpJz1Th2jQNC9WBKOk?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/19pxnZaYifPmBXtbC8rNNcA3kgVGKOySe/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -137,7 +137,7 @@ https://iconify.design/
     }
 
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -187,35 +187,73 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Robotics Instructor",
-      company: "Techno Future Egypt",
-      companylogo: require("./assets/images/TechnoFuture_logo.png"),
-      date: "OCT 2021 - MAR 2022",
+      role: "Full-stack Web Developer",
+      company: "Matched Target",
+      companylogo: require("./assets/images/matched.png"),
+      date: "Oct 2020 - Present",
       // location: "Alexandria, Eygpt",
-      desc:
-        "Taught kids how to build robots, and how to program them using sequence programming methods, Problem Solving, Robot Design, Lego pieces, EV3 programming, and PID Controller.",
-    },
-    {
-      role: "Embedded Engineer",
-      company: "Freelancer",
-      companylogo: require("./assets/images/embedded_desien.jpg"),
-      date: "SEP 2020 - SEP 2021",
-      // location: "Alexandria, Eygpt",
-      desc:
-      " I was working as a PCB design Engineer. PCB design is my profession as well as my hobby. I have delivered many PCB layouts for successful products. I would like to give my best service and talent to the projects.",
-    },
-    {
-      role: "Electrical Team Member",
-      company: "M.I.A Robotics",
-      companylogo: require("./assets/images/MIA_logo.png"),
-      date: "JUN 2018 - JAN 2020",
-      // location: "Alexandria, Eygpt",
-      desc:
-        "M.I.A is a technical team of Alexandria University students. I was involved in ABU Robocon which is a robotics competition.",
       descBullets: [
-        "Designed control circuits used in the quadruped robot.",
-        "Worked on a wireless communications system with the wheeled robot and ps2 joystick (pilot).",
-        "Worked on Reversed engineering for cytron 10-A motor driver.",
+        "Work on MVC platforms especially Laravel.        ",
+        "Develop and enhance JavaScript applications with Bootstrap, jQuery, JSON.        ",
+        "Debug applications and create reports.        ",
+        "Apply advanced Database queries in MySQL.        ",
+        "build and Connect APIs ,fetch reports from Google Adx and Google Analytics.        ",
+        "Use Github and Bitbucket.        ",
+        "Apply SEO technical best practices.        ",
+        "Follow Agile methodology through whole software development cycle .        ",
+        "Support in all area of development.        ",
+      ]
+    },
+    {
+      role: "Backend Developer",
+      company: "Salvimar GMBH",
+      companylogo: require("./assets/images/Salvimar.png"),
+      date: "Jan 2021 - Apr 2021",
+      // location: "Alexandria, Eygpt",
+      descBullets: [
+        "Participated in the entire software development lifecycle, focusing on coding and debugging in one project.        ",
+        "Wrote clean code to develop functional web application/ website using PHP, MySQL, ReactJS, Redux, Bootstrap, MaterialUI.",
+        "Collaborated with Front-end developers to integrate user-facing elements.        ",
+      ]
+    },
+    {
+      role: "Backend Developer",
+      company: "Gowawe",
+      companylogo: require("./assets/images/com.png"),
+      date: "Sep 2020 - Oct 2020",
+      // location: "Alexandria, Eygpt",
+      descBullets: [
+        "Participated in the entire software development lifecycle, focusing on coding and debugging in one project.        ",
+        "Wrote clean code to develop functional web application/ website using Laravel, MySQL, Angular basic, Bootsrap, JQuery.        ",
+        "Collaborated with Front-end developers to integrate user-facing elements.        ",
+      ]
+    },
+    {
+      role: "Full-stack Web Developer",
+      company: "Sanofa Ltd",
+      companylogo: require("./assets/images/sanofa.png"),
+      date: "Sep 2019 - Oct 2021",
+      // location: "Alexandria, Eygpt",
+      descBullets: [
+        "Participated in the entire application lifecycle.",
+        "Wrote clean code to develop functional web applications and commercial websites using Laravel, C#, MySQL, ReactJS, NodeJS, Bootsrap, JQuery.        ",
+        "Troubleshooted and debugged web applications and websites.",
+        "Analyzed, gathered and addressed technical and design requirements.        ",
+        "Built reusable code and libraries for future use.        ",
+        "Built front-end interfaces.        ",
+        "Used Jira to report to the tech lead or business analyst.",
+      ]
+    },
+    {
+      role: "C# and web designer developer",
+      company: "Al-Zahraa",
+      companylogo: require("./assets/images/zahraa.jpg"),
+      date: "Feb 2018 - Jul 2020",
+      // location: "Alexandria, Eygpt",
+      descBullets: [
+        "Wrote clean code to develop functional web applications and commercial websites and Mobile App and Desktop App using Laravel, C#, .NET, JavaSE, SQLite, MySQL, Cordova, Android, Arduino, Python, Bootsrap, JQuery.",
+        "Troubleshooted and debugged web applications and websites.",
+        "Analyzed, gathered and addressed technical and design requirements.        ",
       ]
     }
   ]
@@ -232,32 +270,76 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Some of my Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      image: require("./assets/images/matched.png"),
+      projectName: "Online customer relations management",
+      projectDesc: "An online CRM for managing the publishers, including billing system, displaying real-time metrics through APIs, and connecting the publishers with their account managers through multiple steps and users using Laravel,MySQL,Metronic,JQuery,Chart.JS,Google adx API,Google analytics API,Cron Job.",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "https://adm.matched.se"
+      //   }
+      //   //  you can add extra buttons here.
+      // ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
+      image: require("./assets/images/nefero.png"),
+      projectName: "Content management system",
+      projectDesc: "A customized CMS to manage content as well as editors and proofreaders. Content managed is to contribute to a guessing game, which I built through Laravel, Python, MySQL, ML, Bootsrap, JQuery,Cron Job, SEO tools.",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "https://nefero.com"
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/notification.png"),
+      projectName: "Push Notification Web Application",
+      projectDesc: "A push notifications system based on Firebase SDKs and Device Browser token, that it provides control for publishers to customize and use for their own websites.",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: ""
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/com.png"),
+      projectName: "B2B marketplace",
+      projectDesc: "A Chinese B2B marketplace that connects buyers with shops, including backend administration supervising all correspondences.",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "https://nefero.com"
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/1st.png"),
+      projectName: "E-commercial website",
+      projectDesc: "A dental commercial website based in Sweden, required online billing through Swish and PayPal using Laravel, MySQL, Bootstrap, JQuery, OpenSSL.",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "https://nefero.com"
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/sh.png"),
+      projectName: "POS",
+      projectDesc: "A system for ordering goods online, organizing invoices, sending and tracking shipments.",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "https://nefero.com"
+      //   }
+      // ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -272,48 +354,36 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "JavaScript (Basic)",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+        "It covers topics like, Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling.",
+      image: require("./assets/images/javascript.png"),
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://www.hackerrank.com/certificates/e1e89094fbc0"
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Python (Basic)",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+        "It covers topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes.",
+      image: require("./assets/images/python.png"),
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certification",
+          url: "https://www.hackerrank.com/certificates/c3ea9a069d82"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "Rest API (Intermediate)",
+      subtitle: "It covers topics like getting data from an API and process using parameters or paging.",
+      image: require("./assets/images/rest-api.png"),
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        {name: "Certification", url: "https://www.hackerrank.com/certificates/5635ee80ff96"},
       ]
     }
   ],
@@ -380,7 +450,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+961 70 137 551",
+  number: "+971 50 174 3345",
   email_address: "abdulsalamalkhatib96@gmail.com"
 };
 
